@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access FORM Elments</title>
+    <style>
+        .a_calcu {
+            text-align: center;
+            margin-top: 200px;
+           
+
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body style="background: black;">
+
+
+    <div class="a_calcu">
+        <h1 style="color: white;">Calculator</h1>
+
+        <form onsubmit=" return submitForm1()">
+            <input id="n1" type="text" name="num1">
+
+            <input type="submit" value="+">
+            <input id="n2" type="text" name="num2">
+
+
+        </form>
+
+        <br>
+
+        <form onsubmit=" return submitForm2()">
+            <input id="n3" type="text" name="num3">
+
+            <input type="submit" value="-">
+            <input id="n4" type="text" name="num4">
+
+
+        </form>
+
+        <br>
+
+
+        <form onsubmit=" return submitForm3()">
+            <input id="n5" type="text" name="num5">
+
+            <input type="submit" value="x">
+
+            <input id="n6" type="text" name="num6">
+
+
+        </form>
+
+        <br>
+
+
+        <form onsubmit=" return submitForm4()">
+            <input id="n7" type="text" name="num7">
+
+            <input type="submit" value="/">
+            <input id="n8" type="text" name="num8">
+
+
+        </form>
+
+    </div>
+
+    <script>
+
+        function submitForm1() {
+
+            var n1 = document.getElementById('n1').value;
+
+            var n2 = document.getElementById('n2').value;
+
+
+            var result = parseInt(n1) + parseInt(n2);
+
+
+            alert(result);
+
+            return false;
+
+        }
+
+
+        function submitForm2() {
+
+            var n3 = document.getElementById('n3').value;
+
+            var n4 = document.getElementById('n4').value;
+
+
+            var result = parseInt(n3) - parseInt(n4);
+
+
+            alert(result);
+
+            return false;
+
+        }
+        function submitForm3() {
+
+            var n5 = document.getElementById('n5').value;
+
+            var n6 = document.getElementById('n6').value;
+
+
+            var result = parseInt(n5) * parseInt(n6);
+
+
+            alert(result);
+
+            return false;
+
+        }
+        function submitForm4() {
+
+            var n7 = document.getElementById('n7').value;
+
+            var n8 = document.getElementById('n8').value;
+
+
+            var result = parseInt(n7) / parseInt(n8);
+
+
+            alert(result);
+
+            return false;
+
+        }
+    </script>
+</body>
+
+</html>
